@@ -26,10 +26,10 @@ void acceptDateFromConsole(struct Date *ptrDate)
     printf("Entrt year:");
     scanf("%d", &ptrDate->year);
 };
-void printDateOnConsole(struct Date ptrDate)
+void printDateOnConsole(struct Date *ptrDate)
 {
 
-    printf("Date is %d-%d-%d \n", ptrDate.day, ptrDate.month, ptrDate.year);
+    printf("Date is %d-%d-%d \n", ptrDate->day, ptrDate->month, ptrDate->year);
 };
 
 int main()
